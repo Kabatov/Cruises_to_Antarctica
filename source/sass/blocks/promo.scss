@@ -1,0 +1,110 @@
+.promo {
+  position: relative;
+  background-image: url("../img/background/main-desktop.jpg");
+  background-size: cover;
+  background-color: $color-prussian-blue;
+  color: $color-alice-blue;
+  font-family: $ff-montserrat;
+
+  @supports (background-image: url("../img/background/main-desktop.webp")) {
+    background-image: url("../img/background/main-desktop.webp");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/main-desktop@2x.jpg");
+
+    @supports (background-image: url("../img/background/main-desktop@2x.webp")) {
+      background-image: url("../img/background/main-desktop@2x.webp");
+    }
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/background/main-tablet.jpg");
+    background-size: cover;
+
+    @supports (background-image: url("../img/background/man-tablet.webp")) {
+      background-image: url("../img/background/main-tablet.webp");
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/main-tablet@2x.webp");
+
+    @supports (background-image: url("../img/background/main-tablet@2x.webp")) {
+      background-image: url("../img/background/main-tablet@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/background/main-mobile.jpg");
+
+    @supports (background-image: url("../img/background/main-mobile.webp")) {
+      background-image: url("../img/background/main-mobile.webp");
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/main-mobile@2x.jpg");
+
+    @supports (background-image: url("../img/background/main-mobile@2x.webp")) {
+      background-image: url("../img/background/main-mobile@2x.webp");
+    }
+  }
+
+  h2 {
+    font-family: $ff-montserrat;
+    margin: 0 0 11px 95px;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 66px;
+    color: $color-alice-blue;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    @include vp-1023 {
+      margin-left: 0;
+      font-size: 50px;
+      line-height: 61px;
+      text-shadow: none;
+    }
+
+    @include vp-767 {
+      font-size: 36px;
+      line-height: 45px;
+    }
+  }
+
+  p {
+    font-family: $ff-montserrat;
+    margin: 0 0 0 95px;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-alice-blue;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    @include vp-1023 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 22px;
+      text-shadow: none;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+    }
+  }
+}
+
+.promo__wrapper {
+  padding-top: 269px;
+  padding-bottom: 278px;
+
+  @include vp-1023 {
+    padding-top: 269px;
+    padding-bottom: 275px;
+  }
+
+  @include vp-767 {
+    padding-top: 176px;
+    padding-bottom: 179px;
+  }
+}

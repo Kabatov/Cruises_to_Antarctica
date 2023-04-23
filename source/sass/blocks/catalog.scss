@@ -1,0 +1,246 @@
+.catalog {
+  width: 100%;
+}
+
+.catalog__wrapper {
+  max-width: 1250px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  padding: 0 60px;
+
+  h2 {
+    font-family: $ff-montserrat;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 49px;
+    padding-top: 85px;
+
+    @include vp-1023 {
+      font-size: 26px;
+      line-height: 39px;
+      padding-top: 88px;
+      margin-bottom: 51px;
+    }
+
+    @include vp-767 {
+      font-size: 24px;
+      line-height: 36px;
+      padding-top: 56px;
+      margin-bottom: 31px;
+    }
+  }
+
+  @include vp-1023 {
+    margin-bottom: 98px;
+  }
+
+  @include vp-767 {
+    padding: 0 25px;
+    margin-bottom: 63px;
+  }
+}
+
+.catalog__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4.4%;
+    row-gap: 29px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    row-gap: 30px;
+  }
+}
+
+.catalog__item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80.57% 19.43%;
+  max-width: 260px;
+  height: 386px;
+
+  @include vp-1023 {
+    max-width: none;
+    width: 100%;
+    aspect-ratio: 1 / 1.25;
+    min-height: 386px;
+    height: auto;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    aspect-ratio: 1 / 1.42;
+  }
+
+  h3 {
+    font-family: $ff-montserrat;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-alice-blue;
+    padding: 1px 30px 23px;
+    align-self: self-end;
+
+    @include vp-1023 {
+      padding-left: 35px;
+      padding-bottom: 28px;
+    }
+
+    @include vp-767 {
+      padding: 30px 30px 18px 25px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-tangaroa;
+
+    .catalog__image {
+      display: none;
+    }
+
+    .catalog__description {
+      display: block;
+      padding: 0 25px;
+      padding-top: 15px;
+      padding-bottom: 25px;
+
+      @include vp-1023 {
+        padding-left: 35px;
+        padding-bottom: 12px;
+      }
+
+      @include vp-767 {
+        padding-left: 25px;
+      }
+    }
+
+    h3 {
+      font-family: $ff-montserrat;
+      padding-top: 29px;
+      padding-left: 25px;
+      padding-bottom: 0;
+
+      @include vp-1023 {
+        padding-left: 35px;
+      }
+
+      @include vp-767 {
+        padding-left: 25px;
+      }
+    }
+
+    .catalog__button {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      display: block;
+      margin-bottom: auto;
+    }
+
+    .catalog__item-wrapper {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      display: block;
+      overflow-y: scroll;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      @include vp-767 {
+        height: auto;
+      }
+    }
+  }
+}
+
+.catalog__item-wrapper {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: grid;
+}
+
+.catalog__image {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+
+  img {
+    height: 100%;
+    width: 100%;
+
+    @include vp-767 {
+      object-fit: cover;
+      object-position: 50% 100%;
+    }
+  }
+}
+
+.catalog__description {
+  display: none;
+  font-size: 14px;
+  line-height: 20px;
+
+  dl {
+    font-family: $ff-montserrat;
+    margin: 0;
+  }
+
+  dt {
+    font-family: $ff-montserrat;
+    font-weight: 500;
+    color: $color-alice-blue;
+    margin: 0;
+    margin-bottom: 2px;
+    padding-right: 0.1px;
+  }
+
+  dd {
+    font-family: $ff-montserrat;
+    color: $color-quartz;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-right: 0.1px;
+  }
+}
+
+.catalog__button {
+  max-width: 100%;
+  padding: 10px 0 9px;
+  margin: 0 25px 35px;
+  user-select: none;
+  display: none;
+
+  @include vp-1023 {
+    margin: 0 35px auto;
+  }
+
+  @include vp-767 {
+    margin: 0 35px 25px;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: $color-quartz;
+    color: $color-prussian-blue;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
