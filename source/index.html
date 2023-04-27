@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Туристическое агенство, круизы в Антарктику">
     <title>Cruises to Antarctica</title>
     <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
@@ -37,8 +37,7 @@
               </li>
             </ul>
           </nav>
-          <button class="header__menu-toggle" type="button">
-            <span class="header__menu-toggle-burger"></span>
+          <button class="header__menu-toggle header__menu-toggle-burger" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -146,6 +145,7 @@
                       <dt>Цена</dt>
                       <dd>от 11500 $</dd>
                     </dl>
+                    <!-- <a class="catalog__button btn" href="#">Забронировать</a> -->
                   </div>
                 </div>
                 <a class="catalog__button btn" href="#">Забронировать</a>
@@ -180,6 +180,7 @@
                     <dt>Цена</dt>
                     <dd>от 14500 $</dd>
                   </dl>
+                  <!-- <a class="catalog__button btn" href="#">Забронировать</a> -->
                 </div>
               </div>
               <a class="catalog__button btn" href="#">Забронировать</a>
@@ -215,6 +216,7 @@
                     <dt>Цена</dt>
                     <dd>от 14500 $</dd>
                   </dl>
+                  <!-- <a class="catalog__button btn" href="#">Забронировать</a> -->
                 </div>
               </div>
               <a class="catalog__button btn" href="#">Забронировать</a>
@@ -249,6 +251,7 @@
                     <dt>Цена</dt>
                     <dd>от 9700 $</dd>
                   </dl>
+                  <!-- <a class="catalog__button btn" href="#">Забронировать</a> -->
                 </div>
               </div>
               <a class="catalog__button btn" href="#">Забронировать</a>
@@ -284,6 +287,7 @@
                     <dt>Цена</dt>
                     <dd>от 18600 $</dd>
                   </dl>
+                  <!-- <a class="catalog__button btn" href="#">Забронировать</a> -->
                 </div>
               </div>
               <a class="catalog__button btn" href="#">Забронировать</a>
@@ -318,6 +322,7 @@
                     <dt>Цена</dt>
                     <dd>от 11700 $</dd>
                   </dl>
+                  <!-- <a class="catalog__button btn" href="#">Забронировать</a> -->
                 </div>
               </div>
               <a class="catalog__button btn" href="#">Забронировать</a>
@@ -352,6 +357,7 @@
                     <dt>Цена</dt>
                     <dd>от 12500 $</dd>
                   </dl>
+                  <!-- <a class="catalog__button btn" href="#">Забронировать</a> -->
                 </div>
               </div>
               <a class="catalog__button btn" href="#">Забронировать</a>
@@ -386,6 +392,7 @@
                     <dt>Цена</dt>
                     <dd>от 12300 $</dd>
                   </dl>
+                  <!-- <a class="catalog__button btn" href="#">Забронировать</a> -->
                 </div>
               </div>
               <a class="catalog__button btn" href="#">Забронировать</a>
@@ -407,7 +414,7 @@
               </div>
               <div class="form__field">
                 <label class="visually-hidden" for="phone">Введите ваш номер телефона</label>
-                <input type="tel" name="tel" id="tel" placeholder="Телефон" required>
+                <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
               </div>
               <div class="form__field">
                 <label class="visually-hidden" for="email">Введите свой email.</label>
@@ -426,18 +433,16 @@
             <h2 class="visually-hidden">Контакты</h2>
             <div class="contacts__map-wrapper" id="map"></div>
             <div class="contacts__text-wrapper">
-              <div class="contacts__text">
-                <p>У&nbsp;вас ещё остались вопросы или сомнения?<br>
-                  Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.
-                </p>
-              </div>
+              <p class="contacts__text">У&nbsp;вас ещё остались вопросы или сомнения?<br>
+                Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.
+              </p>
               <address class="contacts__address">
                 <svg width="18" height="22">
                   <use xlink:href="img/sprite.svg#icon-map"></use>
                 </svg>
-                <p>г.&nbsp;Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</p>
+                <a href="#">г.&nbsp;Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</a>
               </address>
-              <address class="contacts__phone">
+              <section class="contacts__phone">
                 <svg width="18" height="22">
                   <use xlink:href="img/sprite.svg#phone"></use>
                 </svg>

@@ -176,6 +176,7 @@
 }
 
 .catalog__image {
+  position: relative;
   grid-column: 1 / 2;
   grid-row: 1 / -1;
 
@@ -191,6 +192,7 @@
 }
 
 .catalog__description {
+  position: absolute;
   display: none;
   font-size: 14px;
   line-height: 20px;

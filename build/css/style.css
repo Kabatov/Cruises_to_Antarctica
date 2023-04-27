@@ -711,7 +711,7 @@ button,
 .header__menu-toggle {
   display: none;
   position: absolute;
-  top: 10px;
+  top: -55px;
   right: 0;
   width: 54px;
   height: 42px;
@@ -726,7 +726,7 @@ button,
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-  left: 15px;
+  left: 266px;
   width: 24px;
   height: 2px;
   background-color: #f9fbfd;
@@ -777,8 +777,8 @@ button,
 .header__menu-toggle-burger--close::after {
   width: 18px;
   height: 2px;
-  top: 0;
-  left: 9px;
+  top: -170px;
+  left: -30px;
   -webkit-transition: top 0.4s, -webkit-transform 0.25s 0.25s;
   transition: top 0.4s, -webkit-transform 0.25s 0.25s;
   -o-transition: top 0.4s, transform 0.25s 0.25s;
@@ -793,8 +793,8 @@ button,
 .header__menu-toggle-burger--close::before {
   width: 18px;
   height: 2px;
-  top: 0;
-  left: 9px;
+  top: -170px;
+  left: -30px;
   -webkit-transition: top 0.25s, -webkit-transform 0.25s 0.25s;
   transition: top 0.25s, -webkit-transform 0.25s 0.25s;
   -o-transition: top 0.25s, transform 0.25s 0.25s;
@@ -1133,6 +1133,7 @@ button,
 }
 
 .catalog__image {
+  position: relative;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -1145,6 +1146,7 @@ button,
 }
 
 .catalog__description {
+  position: absolute;
   display: none;
   font-size: 14px;
   line-height: 20px;

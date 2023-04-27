@@ -92,7 +92,7 @@
 .header__menu-toggle {
   display: none;
   position: absolute;
-  top: 10px;
+  top: -55px;
   right: 0;
   width: 54px;
   height: 42px;
@@ -112,7 +112,7 @@
   display: block;
   box-sizing: border-box;
   position: relative;
-  left: 15px;
+  left: 266px;
   width: 24px;
   height: 2px;
   background-color: $color-alice-blue;
@@ -147,8 +147,8 @@
     &::after {
       width: 18px;
       height: 2px;
-      top: 0;
-      left: 9px;
+      top: -170px;
+      left: -30px;
       transition: top 0.4s, transform 0.25s 0.25s;
       transform: rotateZ(45deg);
       background-color: $color-tangaroa;
@@ -157,8 +157,8 @@
     &::before {
       width: 18px;
       height: 2px;
-      top: 0;
-      left: 9px;
+      top: -170px;
+      left: -30px;
       transition: top 0.25s, transform 0.25s 0.25s;
       transform: rotateZ(-45deg);
       background-color: $color-tangaroa;
