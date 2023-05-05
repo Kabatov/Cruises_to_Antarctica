@@ -35,6 +35,7 @@
 
   @include vp-1023 {
     height: 335px;
+    grid-row-start: 1;
     background-image: url("../img/background/map-no-js-tablet.png");
 
     @supports (
@@ -56,6 +57,7 @@
 
   @include vp-767 {
     height: 316px;
+    grid-row-start: 2;
     background-image: url("../img/background/map-no-js-mobile.png");
 
     @supports (
@@ -131,7 +133,9 @@
   font-family: $ff-montserrat;
   color: $color-tangaroa;
   fill: currentColor;
+}
 
+.contacts__link--phone {
   &:hover {
     opacity: 0.8;
   }

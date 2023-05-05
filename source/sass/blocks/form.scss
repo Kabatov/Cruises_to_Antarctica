@@ -54,6 +54,11 @@
   background: $color-alice-blue;
   border: none;
 
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
   &::placeholder {
     font-family: $ff-montserrat;
     font-weight: 400;
@@ -85,6 +90,7 @@
   background-position: center;
   border: 1px solid #ffffff;
   appearance: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {

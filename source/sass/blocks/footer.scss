@@ -35,6 +35,13 @@
   color: inherit;
   line-height: 0;
 
+  svg {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+
   @include vp-1023 {
     margin-right: 25px;
 
