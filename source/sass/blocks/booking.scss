@@ -123,14 +123,14 @@
   font-family: $ff-montserrat;
   margin: 0;
   padding: 0 10px 5px 0;
-  width: 355px;
+  width: 401px;
   font-size: 18px;
   line-height: 27px;
   color: $color-tangaroa;
 
   @include vp-1023 {
     margin: 0 auto;
-    padding: 0 0 52px;
+    padding: 0 5px 52px;
     text-align: center;
   }
 

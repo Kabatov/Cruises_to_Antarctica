@@ -810,13 +810,13 @@ button,
   -ms-grid-columns: 1fr minmax(auto, 560px);
   grid-template-columns: 1fr minmax(auto, 560px);
   gap: 20px 65px;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .intro__text-wrapper {
-  padding: 55px 0;
+  padding: 10px 0;
 }
 
 .intro__text-wrapper h2 {
@@ -842,13 +842,13 @@ button,
 }
 
 .advantages {
-  background-color: #e3ecf6;
   position: relative;
   padding: 110px 0 120px;
+  background-color: #e3ecf6;
   background-image: url("../img/background/advantages-desktop.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 @supports (background-image: url("../img/background/advantages-desktop.webp")) {
@@ -926,7 +926,7 @@ button,
 }
 
 .catalog {
-  padding: 85px 0 120px;
+  padding: 85px 0 105px;
 }
 
 .catalog__wrapper h2 {
@@ -939,9 +939,7 @@ button,
 }
 
 .catalog__list {
-  padding: 0;
-  margin: 0 auto;
-  /* max-width: 1130px; */
+  padding: 0 15px;
   list-style-type: none;
   display: -ms-grid;
   display: grid;
@@ -979,11 +977,13 @@ button,
 
 .catalog__item-wrapper {
   position: absolute;
+  z-index: 1;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (auto)[3];
   grid-template-rows: repeat(3, auto);
-  z-index: 1;
+  -ms-flex-line-pack: start;
+  align-content: start;
   padding: 28px 23px;
   color: #d8d8d9;
   background-color: #011c40;
@@ -1001,7 +1001,6 @@ button,
 }
 
 .catalog__description {
-  height: 236px;
   margin-bottom: 5px;
   overflow: auto;
   font-size: 14px;
@@ -1102,7 +1101,7 @@ button,
   font-family: "Montserrat", "Arial", sans-serif;
   margin: 0;
   padding: 0 10px 5px 0;
-  width: 355px;
+  width: 401px;
   font-size: 18px;
   line-height: 27px;
   color: #011c40;
@@ -1301,7 +1300,7 @@ button,
   width: -moz-fit-content;
   width: fit-content;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 22px;
   font-family: "Montserrat", "Arial", sans-serif;
   color: #011c40;
   fill: currentColor;
@@ -1382,24 +1381,22 @@ button,
 }
 
 .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  min-width: 133px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+  grid-template-columns: repeat(3, auto);
+  gap: 10px 26px;
 }
 
 .social__link {
-  margin-left: 27px;
-  padding: 10px 0;
-  line-height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
 }
 
 .social__link:hover {
@@ -1553,6 +1550,9 @@ button,
     -ms-grid-columns: 1fr minmax(auto, 324px);
     grid-template-columns: 1fr minmax(auto, 324px);
     gap: 30px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
   }
 
   .intro__text-wrapper {
@@ -1560,8 +1560,8 @@ button,
   }
 
   .intro__text-wrapper h2 {
-    max-width: 300px;
     margin-bottom: 17px;
+    padding-right: 25px;
     font-size: 26px;
     line-height: 36px;
   }
@@ -1571,8 +1571,8 @@ button,
   }
 
   .advantages {
-    background-image: url("../img/background/advantages-tablet.jpg");
     padding: 90px 0 100px;
+    background-image: url("../img/background/advantages-tablet.jpg");
   }
 
 @supports (background-image: url("../img/background/advantages-tablet.webp")) {
@@ -1618,7 +1618,7 @@ button,
   }
 
   .catalog {
-    padding: 90px 0 100px;
+    padding: 90px 0 84px;
   }
 
   .catalog__wrapper h2 {
@@ -1629,7 +1629,6 @@ button,
   .catalog__list {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
-    max-width: 648px;
   }
 
   .catalog__image h3 {
@@ -1680,7 +1679,7 @@ button,
 
   .booking__inner p {
     margin: 0 auto;
-    padding: 0 0 52px;
+    padding: 0 5px 52px;
     text-align: center;
   }
 
@@ -1716,11 +1715,14 @@ button,
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1;
-    margin-bottom: 20px;
   }
 
   .contacts__text-wrapper p {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
+  }
+
+  .contacts__link + .contacts__link {
+    margin-top: 24px;
   }
 
   .footer__wrapper {
@@ -1746,12 +1748,13 @@ button,
     line-height: 16px;
   }
 
-  .social__link {
-    margin-left: 22px;
-    padding: 5px 0;
+  .social {
+    -ms-grid-columns: 29px 29px 29px;
+    grid-template-columns: 29px 29px 29px;
+    gap: 2px;
   }
 
-  .social__link svg {
+  .social__link {
     width: 16px;
     height: 16px;
   }
@@ -1917,7 +1920,7 @@ button,
   }
 
   .promo p {
-    max-width: auto;
+    padding-right: 58px;
     font-size: 16px;
   }
 
@@ -1930,7 +1933,6 @@ button,
   }
 
   .intro__text-wrapper h2 {
-    max-width: 275px;
     margin-bottom: 14px;
     font-size: 24px;
     line-height: 34px;
@@ -1941,8 +1943,8 @@ button,
   }
 
   .advantages {
-    background-image: url("../img/background/advantages-mobile.jpg");
     padding: 56px 0 67px;
+    background-image: url("../img/background/advantages-mobile.jpg");
   }
 
 @supports (background-image: url("../img/background/advantages-mobile.webp")) {
@@ -1972,10 +1974,11 @@ button,
 
   .advantages__item h3 {
     margin-bottom: 8px;
+    padding-right: 55px;
   }
 
   .catalog {
-    padding: 54px 0 65px;
+    padding: 54px 0 49px;
   }
 
   .catalog__wrapper h2 {
@@ -1987,7 +1990,7 @@ button,
   .catalog__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    max-width: 270px;
+    padding: 0 10px;
   }
 
   .catalog__image h3 {
@@ -2108,8 +2111,12 @@ button,
     }
 }
 
+  .contacts__text-wrapper {
+    margin-bottom: 20px;
+  }
+
   .contacts__text-wrapper p {
-    margin-bottom: 27px;
+    margin-bottom: 30px;
   }
 
   .footer__wrapper {
@@ -2134,7 +2141,7 @@ button,
   }
 
   .footer__logo-link {
-    margin: 0 0 27px;
+    margin: 0 0 25px;
   }
 
   .footer__logo-link svg {
@@ -2155,17 +2162,12 @@ button,
   }
 
   .footer__social {
-    margin-top: 7px;
+    margin-top: 10px;
     margin-left: -3px;
   }
 
   .social {
-    display: block;
-  }
-
-  .social__link {
-    margin-left: 0;
-    margin-right: 16px;
+    gap: 7px;
   }
 }
 

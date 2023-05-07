@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initNoJs} from './modules/no-js';
 import {initMap} from './modules/map';
 import {mobileMenu} from './modules/mobile-menu';
+import {Form} from './modules/form-validate/form';
 
 
 // ---------------------------------
@@ -22,6 +23,9 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initMap();
     mobileMenu();
+    const form = new Form();
+    window.form = form;
+    form.init();
 
   });
 });

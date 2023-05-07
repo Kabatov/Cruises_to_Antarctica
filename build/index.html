@@ -47,7 +47,7 @@
           <section class="promo">
             <h1 class="visually-hidden">Сайт компании осуществляющей круизы в Антарктику</h1>
             <h2>Круизы в&nbsp;Антарктику</h2>
-            <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
+            <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
           </section>
         </div>
       </header>
@@ -55,7 +55,7 @@
         <section class="intro">
           <div class="intro__wrapper container">
             <div class="intro__text-wrapper">
-              <h2>Путешествие на&nbsp;край&nbsp;Земли</h2>
+              <h2>Путешествие на&nbsp;край Земли</h2>
               <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики.
                 Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько
                 видов пингвинов, китов, морских котиков и многое другое.
@@ -87,7 +87,7 @@
                 <svg width="27" height="32">
                   <use xlink:href="img/sprite.svg#liner"></use>
                 </svg>
-                <h3>Небольшой круизный&nbsp;лайнер</h3>
+                <h3>Небольшой круизный лайнер</h3>
                 <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300 гостей, поможет
                   избежать шума и очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.
                 </p>
@@ -96,7 +96,7 @@
                 <svg width="38" height="32">
                   <use xlink:href="img/sprite.svg#all-inclusive"></use>
                 </svg>
-                <h3>Система <br>все включено</h3>
+                <h3>Система все&nbsp;включено</h3>
                 <p>Все наши круизы работают по системе "Все Включено".<br>
                   Великолепные блюда и&nbsp;безлимитный бар доступны для&nbsp;вас 24&nbsp;часа.
                 </p>
@@ -105,7 +105,7 @@
                 <svg width="44" height="32">
                   <use xlink:href="img/sprite.svg#boat"></use>
                 </svg>
-                <h3>Экскурсионные <br>туры на Zodiac</h3>
+                <h3>Экскурсионные туры на&nbsp;Zodiac</h3>
                 <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках
                   типа Zodiac с опытными экскурсоводами.
                 </p>
@@ -408,49 +408,51 @@
               <h2>Раннее бронирование</h2>
               <p>Забронируйте тур<br> за 3-6 месяцев до&nbsp;даты выезда и сэкономьте до 50%</p>
             </div>
-            <form class="form" action="https://echo.htmlacademy.ru" method="post">
-              <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
-              <div class="form__field">
-                <label class="visually-hidden" for="form-name">Введите своё имя.</label>
-                <input type="text" id="form-name" name="name" placeholder="Имя" required>
-              </div>
-              <div class="form__field">
-                <label class="visually-hidden" for="phone">Введите ваш номер телефона</label>
-                <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
-              </div>
-              <div class="form__field">
-                <label class="visually-hidden" for="email">Введите свой email.</label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
-              </div>
-              <div class="form__field form__field--checkbox">
-                <input type="checkbox" name="check" id="checkbox" checked required>
-                <label for="checkbox">Я согласен на обработку моих&nbsp;персональных данных</label>
-              </div>
-              <button class="btn form__button" type="submit">Оставить заявку</button>
-            </form>
-          </div>
-        </section>
-        <section class="contacts" id="contacts">
-          <div class="contacts__wrapper container">
-            <h2 class="visually-hidden">Контакты</h2>
-            <div class="contacts__map-wrapper" id="map"></div>
-            <div class="contacts__text-wrapper">
-              <p>У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
-              <a class="contacts__link contacts__link--address" href="#">
-                <svg width="18" height="22">
-                  <use xlink:href="img/sprite.svg#icon-map"></use>
-                </svg>
-                <span>г.&nbsp;Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</span>
-              </a>
-              <a class="contacts__link contacts__link--phone" href="tel:+78002000000">
-                <svg width="18" height="22">
-                  <use xlink:href="img/sprite.svg#phone"></use>
-                </svg>
-                <span>8-800-200-00-00</span>
-              </a>
+            <div class="booking__feedback" data-form-validate data-callback="base">
+              <form class="form" action="https://echo.htmlacademy.ru" method="post">
+                <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+                <div class="form__field" data-validate-type="text" data-required>
+                  <label class="visually-hidden" for="form-name">Введите своё имя.</label>
+                  <input type="text" id="form-name" name="name" placeholder="Имя" required>
+                </div>
+                <div class="form__field" data-validate-type="phone" data-required>
+                  <label class="visually-hidden" for="phone">Введите ваш номер телефона</label>
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                </div>
+                <div class="form__field" data-validate-type="email" data-required>
+                  <label class="visually-hidden" for="email">Введите свой email.</label>
+                  <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form__field form__field--checkbox" data-validate-type="checkbox" data-required>
+                  <input type="checkbox" name="check" id="checkbox" checked required>
+                  <label for="checkbox">Я согласен на обработку моих&nbsp;персональных данных</label>
+                </div>
+                <button class="btn form__button" type="submit">Оставить заявку</button>
+              </form>
             </div>
           </div>
         </section>
+        <section class="contacts" id="contacts">
+        <div class="contacts__wrapper container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="contacts__map-wrapper" id="map"></div>
+          <div class="contacts__text-wrapper">
+            <p>У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
+            <a class="contacts__link contacts__link--address" href="#">
+              <svg width="18" height="22">
+                <use xlink:href="img/sprite.svg#icon-map"></use>
+              </svg>
+              <span>г.&nbsp;Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</span>
+            </a>
+            <a class="contacts__link contacts__link--phone" href="tel:+78002000000">
+              <svg width="18" height="22">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+              <span>8-800-200-00-00</span>
+            </a>
+          </div>
+        </div>
+      </section>
       </main>
       <footer class="footer">
         <div class="footer__wrapper container">
